@@ -1252,8 +1252,8 @@ if (mysqli_num_rows($locationproduct) == 1) {
             ]
         ]);
         Editmessagetext($from_id, $message_id, "❌ موجودی شما برای خرید سرویس کافی نمی باشد.
-💸  برای افزایش موجودی مبلغ را  به تومان وارد کنید:
-✅  حداقل مبلغ $minbalance حداکثر مبلغ $maxbalance تومان می باشد", $bakinfos, 'HTML');
+💸  برای افزایش موجودی مبلغ " . number_format($datafactor['price_product']) . " تومان را وارد کنید:
+", $bakinfos, 'HTML');
         step('get_price', $from_id);
         return;
     }
@@ -2033,8 +2033,8 @@ $textonebuy
             ]
         ]);
         Editmessagetext($from_id, $message_id, "❌ موجودی شما برای خرید سرویس کافی نمی باشد.
-💸  برای افزایش موجودی مبلغ را  به تومان وارد کنید:
-✅  حداقل مبلغ $minbalance حداکثر مبلغ $maxbalance تومان می باشد", $bakinfos, 'HTML');
+💸  برای افزایش موجودی مبلغ " . number_format($datafactor['price_product']) . " تومان را وارد کنید:
+", $bakinfos, 'HTML');
         step('get_price', $from_id);
         return;
     }
